@@ -1,10 +1,6 @@
-##Steps of running this project
+## 여러 redux 강의 및 자료를 보고 만든 스터디때 쓸 레포입니다
 
-from the command prompt clone the project
+## 참고 자료 출처
 
-* $git clone https://github.com/techsithgit/react-with-redux.git
-* $cd react-with-redux
-* $npm install
-* $npm start
-
-[Watch the Tutorial](https://youtu.be/Fq15pkckMqQ).
+- https://github.com/techsithgit/react-with-redux
+- https://react.vlpt.us/redux-middleware/05-redux-thunk-with-promise.html
