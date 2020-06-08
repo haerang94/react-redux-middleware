@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
+import * as actions from "./store/actions/actions";
 
 class App extends Component {
   render() {
@@ -16,19 +17,16 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    age: state.age
+    age: state.age,
   };
 };
 
-const mapDispachToProps = dispatch => {
+const mapDispachToProps = (dispatch) => {
   return {
-    onAgeUp: () => dispatch({ type: "AGE_UP", value: 1 }),
-    onAgeDown: () => dispatch({ type: "AGE_DOWN", value: 1 })
+    onAgeUp: () => dispatch(actions.ageUp(2)),
+    onAgeDown: () => dispatch(actions.ageDown(3)),
   };
 };
-export default connect(
-  mapStateToProps,
-  mapDispachToProps
-)(App);
+export default connect(mapStateToProps, mapDispachToProps)(App);
