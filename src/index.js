@@ -11,6 +11,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import createSagaMiddleware from "redux-saga";
 import { watchAgeUp } from "./sagas/saga";
+
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
